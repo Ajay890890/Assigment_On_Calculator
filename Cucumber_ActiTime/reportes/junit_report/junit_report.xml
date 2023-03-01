@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="2" time="43.144">
+    <testcase classname="ActiTime Login Feature" name="Validate login page" time="32.376">
+        <system-out><![CDATA[Given User is on login page.................................................passed
+Then user name field is displayed...........................................passed
+And Password field is displayed.............................................passed
+And Login button is displayed...............................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="ActiTime Login Feature" name="Verify login functionality" time="10.118">
+        <failure message="expected [actiTIME - Enter Time-Track123] but found [actiTIME - Enter Time-Track]" type="java.lang.AssertionError"><![CDATA[Given User is on login page.................................................passed
+When user enters username...................................................passed
+And user enters password....................................................passed
+And user clicks on login botton.............................................passed
+And Dashborad title is "actiTIME - Enter Time-Track123".....................failed
+
+StackTrace:
+java.lang.AssertionError: expected [actiTIME - Enter Time-Track123] but found [actiTIME - Enter Time-Track]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:629)
+	at org.testng.Assert.assertEquals(Assert.java:639)
+	at org.stepDefinations.LoginPageStepDef.dashborad_title_is(LoginPageStepDef.java:72)
+	at ✽.Dashborad title is "actiTIME - Enter Time-Track123"(file:///A:/cmd%20prg/Cucumber_ActiTime/src/test/resources/org/features/LoginPage.feature:16)
+]]></failure>
+    </testcase>
+</testsuite>
